@@ -25,7 +25,7 @@ form.addEventListener('submit',async (e) => {
 
 async function getWeatherData(city){
     try{
-        let apiCall = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${apiKey}`
+        let apiCall = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${apiKey}`
         
         let response = await fetch(apiCall)
         if(!response.ok){
